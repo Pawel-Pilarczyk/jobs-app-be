@@ -6,9 +6,6 @@ const blogRoutes = require("./routes/blogRoutes");
 // express app
 const app = express();
 
-//connect to out mangoDB database
-const dbURI =
-  "mongodb+srv://user1:pass123@nodecluster001.82zkv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose
   .connect(dbURI)
   .then((result) => {
